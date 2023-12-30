@@ -1,0 +1,109 @@
+.mt-4 {
+    padding: 2vw; /* some padding */
+    text-align: center; /* center the text */
+    background: #bfc2c1; /* background */
+    color: rgb(0, 0, 0); /* text color */
+    display: flex;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;  
+  }
+  
+  /* Increase the font size of the <h1> element */
+  .mt-4 h1 {
+    font-size: 50px;
+  }
+  
+  .artbutton:hover {
+    transform: scale(1.1);
+  }
+
+  .artbutton {
+    transition: all 0.6s;
+  }
+
+  .h1 {
+    text-align: center;
+  }
+  
+  .column {
+    flex: 50%;
+    padding: 5px;
+  }
+  
+  .visualcol {
+    flex: 50%;
+    float: left;
+
+    object-fit: cover;
+    text-align: center;
+  }
+
+  .aboutme {
+    text-align: left;
+  }
+
+  img {
+    flex: 50%;
+    max-width: 75%;
+    max-height:75%;
+    margin: auto;
+  }
+
+  /* Ensure proper sizing */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Column container */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 20px; /* Some padding */
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%; /* Set the width of the main content */
+    background-color: white; /* White background color */
+    padding: 20px; /* Some padding */
+  }
+
+
+  /* Animation property */
+.about {
+  animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
