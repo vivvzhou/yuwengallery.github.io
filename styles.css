@@ -128,19 +128,6 @@ body {
   cursor: pointer;
 }
 
-.visualcol {
-  flex: 50%;
-  float: left;
-
-  object-fit: cover;
-  text-align: center;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .modal-columns {
   display: flex;
   justify-content: space-between;
@@ -154,6 +141,8 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
+  flex-direction: column; /* Stack images vertically */
+  gap: 15px;
 }
 
 /* Responsive behavior for smaller screens */
@@ -165,4 +154,12 @@ body {
   .modal-column {
     width: 100%;
   }
+}
+
+/* Ensure modal images fit nicely */
+.modal-column img {
+  width: 100%; /* Makes images responsive */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
