@@ -1,11 +1,25 @@
-.image{
-  flex: 50%;
-  max-width: 50%;
-  max-height: 50%;
+img {
+  display: flex;
+  width: 25%;
+  max-width: 100%;
   margin: auto;
+  border-style: outset;
+  border-color: lightpink;
 }
 
 .about-me {
-  max-width: 50%; 
-  margin: auto
+  padding: 2vw;
+  text-align: center; 
+  background: #bfc2c1; 
+  color: rgb(0, 0, 0);
+  width: 50%;
+  max-width: 100%;
 }
+
+.container {
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
