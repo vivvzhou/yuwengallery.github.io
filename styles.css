@@ -118,3 +118,16 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
+.visualcol {
+  flex: 50%;
+  float: left;
+
+  object-fit: cover;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
