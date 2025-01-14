@@ -26,6 +26,13 @@ img {
   align-items: center;
 }
 
+.textcontainer {
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .underlay {
   position: relative;
   width: 100%;
